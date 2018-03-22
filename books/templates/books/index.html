@@ -3,7 +3,7 @@
 {% if author_list %}
     <ol>
     {% for author in author_list %}
-        <li><a href="/author/{{ author.id }}/books">{{ author.nickname }}</a></li>
+        <h2><li><a href="/author/{{ author.id }}/books">{{ author.nickname }}</a></li></h2>
         <p>Дата рождения: {{ author.was_born }}</p>
     {% endfor %}
     </ol>
