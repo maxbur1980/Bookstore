@@ -1,0 +1,9 @@
+<h1>{{ book_list }}</h1>
+<ol>
+{% for book in book_list.book_set.all %}
+    <h2><li>{{ book.title }}</li></h2>
+    <span><p>Дата выпуска:</span> {{ book.published }}</p>
+    <p>Количество страниц: {{ book.length }}</p>
+
+{% endfor %}
+</ol>
